@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8DC"
+    tools:context=".Rel">
+
+    <TextView
+        android:id="@+id/TV1"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="#5CDF938E"
+        android:gravity="center"
+        android:text=" This is Relative Layout page"
+        android:textColor="#AC2C2C"
+        android:textSize="18sp"
+        app:fontFamily="@font/autour_one" />
+
+    <TextView
+        android:id="@+id/TV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TV1"
+        android:layout_marginTop="0dp"
+        android:text="Hello peeps!"
+        android:textColor="#0A0909"
+        android:textSize="18sp"
+        app:fontFamily="@font/finger_paint" />
+
+    <TextView
+        android:id="@+id/TV3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TV1"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@id/TV2"
+        android:text="im ninie"
+        android:textColor="#0E0D0D"
+        android:textSize="18sp"
+        app:fontFamily="@font/finger_paint" />
+
+    <TextView
+        android:id="@+id/TV4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TV3"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="by me :)"
+        android:textColor="#E60F0F0F"
+        android:textSize="24sp"
+        app:fontFamily="@font/just_me_again_down_here" />
+
+
+    <EditText
+        android:id="@+id/ETName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TV4"
+        android:layout_marginTop="144dp"
+        android:background="#6DC06B6B"
+        android:hint="Enter Your Name Here"
+        android:padding="15dp"
+        android:textColorHint="#691919"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="231dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/TV4"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="209dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#97ECB8B8"
+        android:onClick="BtnBRelClicked"
+        android:text="Back To Home"
+        android:textColor="#91113C"
+        android:textColorHighlight="#642828" />
+
+
+</RelativeLayout>
